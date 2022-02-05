@@ -9,7 +9,7 @@
 <?php 
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
-// mb_internal_encoding('UTF-8'); Fatal error: Uncaught Error: Call to undefined function mb_internal_encoding() in /home/n/Документы/123/phpDT/index.php on line 12
+mb_internal_encoding('UTF-8'); 
 
 include 'code.php';
  ?>    
