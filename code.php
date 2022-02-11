@@ -1,33 +1,68 @@
 <?php 
 //Задача №1
-$num = 1;
-$num = $num + 1;
-$num = $num + 1;
+$num = 10;
+++$num;
+++$num;
+--$num;
 
-echo $num . '<br>';//3
+echo $num . '<br>';//11
 
 //Задача №2
-$num = 1;
-$num = $num + 2;
-$num = $num + 3;
+$num = 3;
 
-echo $num . '<br>';//6
-
+echo ++$num . '<br>';//4
 
 //Задача №3
-$num = 47;
-$num += 7;
-$num -= 18;
-$num *= 10;
-$num /= 15;
+$num = 3;
 
-echo $num . '<br>';
+echo $num++ . '<br>';//3
+
 
 //Задача №4
-$str = 'a';
-$str .= 'b';
-$str .= 'c';
+$num = 3;
+
+echo --$num . '<br>';//2
+
+//Задача №5
+$num = 3;
+
+echo $num-- . '<br>';//3
+
+//Задача №6
+$num1 = 3;
+$num2 = ++$num1;
+
+echo $num1 . '<br>';//4
+echo $num2 . '<br>';//4
 
 
-echo $str . '<br>';
+//Задача №7
+$num1 = 3;
+$num2 = $num1++;
+
+echo $num1 . '<br>';//4
+echo $num2 . '<br>';//3
+
+//Задача №8
+$num1 = 3;
+$num2 = --$num1;
+
+echo $num1 . '<br>';//2
+echo $num2 . '<br>';//2
+
+//Задача №9
+$num1 = 3;
+$num2 = $num1--;
+
+echo $num1 . '<br>';//2
+echo $num2 . '<br>';//3
+
+
+//Задача №10
+$num1 = 3;
+$num1++;
+$num2 = $num1--;
+
+echo $num1++ . '<br>';//3
+echo --$num2 . '<br>';//3
 ?>
