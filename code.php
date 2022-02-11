@@ -1,32 +1,17 @@
 <?php 
 //Задача №1
-$arr = ['a', 'b', 'c'];
-echo $arr . '<br>';//Warning: Array to string conversion in /home/n/Документы/123/phpDT/code.php on line 5
-var_dump($arr);
-
-//Задача №1
-$arr = array('1','2','3');
-foreach ($arr as $value) {
-    echo $value, "\n";
-}
-var_dump($arr);
+$arr = [1=>'a',2=> 'b', 3=>'c'];
+echo $arr[1] . $arr[2] . $arr[3] . '<br>';
 
 //Задача №2
-$arr = ['a','b','c'];
-
-echo $arr[0];
-echo $arr[1];
-echo $arr[2]. '<br>';
-
+$arr = [1=>'january', 'fabruary', 'march'];
+echo $arr[1] ."\n". $arr[2] ."\n". $arr[3] . '<br>';
 
 //Задача №3
-$arr = ['a','b','c','d'];
+$user= ['name'=>'gadja','surname'=> 'renova', 'patronymic'=>'petrovich'];
+echo $user['surname'] .'-'. $user['name'] . '-'. $user['patronymic'] . '<br>';
 
-echo $arr[0] . '+'. $arr[1] . '+'. $arr[2] . '+'. $arr[3] . '<br>';
-
-
-//Задача №4s
-$arr = [1,2,3];
-
-echo ($arr[0]+$arr[1]+$arr[2]) . '<br>';
+//Задача №4
+$date = ['year'=>'2022','month'=>'02', 'day'=>'11'];
+echo $date['year'] .'-'. $date['month'] . '-'. $date['day'] . '<br>';
 ?>
