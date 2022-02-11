@@ -1,17 +1,17 @@
 <?php 
 //Задача №1
-$arr = [1=>'a',2=> 'b', 3=>'c'];
-echo $arr[1] . $arr[2] . $arr[3] . '<br>';
+$arr = [1=>'belij',2=> 'pashalnij', 3=>'zajats'];
+echo $arr[1] ."\n".  $arr[2] ."\n".  $arr[3] . '<br>';
 
 //Задача №2
-$arr = [1=>'january', 'fabruary', 'march'];
+$arr = [2=> 'pashalnij', 1=>'belij', 3=>'zajats'];
 echo $arr[1] ."\n". $arr[2] ."\n". $arr[3] . '<br>';
 
 //Задача №3
-$user= ['name'=>'gadja','surname'=> 'renova', 'patronymic'=>'petrovich'];
-echo $user['surname'] .'-'. $user['name'] . '-'. $user['patronymic'] . '<br>';
+$arr = [13=>'belij',46=> 'pashalnij', 28=>'zajats'];
+echo $arr[13] ."\n".  $arr[46] . "\n". $arr[28] . '<br>';
 
 //Задача №4
-$date = ['year'=>'2022','month'=>'02', 'day'=>'11'];
-echo $date['year'] .'-'. $date['month'] . '-'. $date['day'] . '<br>';
+$arr = [13=>'belij',46=> 'pashalnij', 28=>'zajats'];
+echo $arr[28] ."\n".  $arr[13] . "\n". $arr[46] . '<br>';
 ?>
