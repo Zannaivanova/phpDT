@@ -1,14 +1,73 @@
 <?php 
 //Задача №1
-$arr = [1, 2, 3, 4, 5];
-$key1 = 1;
-$key2 = 2;
+$test = 5;
 
-echo ($arr[$key1]+$arr[$key2]) . '<br>';
+if ($test > 10) {
+    echo '+';
+} else {
+	echo '-';
+}
+echo '<br>';
+
 
 //Задача №2
-$arr = ['a'=>1, 'b'=> 2, 'c'=> 3];
-$key = 'b';
+$test = 5;
 
-echo $arr[$key];
+if ($test < 10) {
+    echo '+';
+} else {
+	echo '-';
+}
+echo '<br>';
+
+//Задача №3
+$test = 10;
+
+if ($test <= 10) {
+    echo '+';
+} else {
+	echo '-';
+}
+echo '<br>';
+
+//Задача №4
+$test = 10;
+
+if ($test >= 10) {
+    echo '+';
+} else {
+	echo '-';
+}
+echo '<br>';
+
+//Задача №5
+$test = 10;
+
+if ($test == 10) {
+    echo '+';
+} else {
+	echo '-';
+}
+echo '<br>';
+
+
+//Задача №6
+$test = 10;
+
+if ($test != 10) {
+    echo '+';
+} else {
+	echo '-';
+}
+echo '<br>';
+
+//Задача №7
+$test1 = 5;
+$test2 = 10;
+
+if ($test1 > $test2) {
+    echo '+';
+} else {
+	echo '-';
+}
 ?>
