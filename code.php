@@ -1,54 +1,47 @@
 <?php 
 //Задача №1
-$day = 25;
-if ($day<=10) {
-		echo '1я декада';
+$min = 25;
+
+if ($min>=0 and $min<=19) {
+		echo '1 треть';
 	} 
-if ($day>10 and $day<=20) {
-		echo '2я декада';
-	} 
-if ($day>20 and $day<=31) {
-		echo '3я декада';
-	} 
+if ($min>=20 and $min<=39) {
+		echo '2 треть';
+	}  
+if ($min>=40 and $min<=59) {
+		echo '3 треть';
+	}  
 echo '<br>';
 
 //Задача №2
-$day = 15;
-if ($day<=10) {
-		echo '1я декада';
-	} elseif ($day>10 and $day<=20) {
-		echo '2я декада';
-	} elseif ($day>20 and $day<=31) {
-		echo '3я декада';
-	} 
-echo '<br>';
+$arr = '256';
 
+if (strlen($arr)==3) {
+		echo $arr[0]+$arr[1]+$arr[2];
+	} else {
+		echo 'в массиве НЕ 3 элемента';
+	}  
+echo '<br>';
 
 //Задача №3
-$day = 35;
-if ($day<=10) {
-		echo '1я декада';
-	} elseif ($day>10 and $day<=20) {
-		echo '2я декада';
-	} elseif ($day>20 and $day<=31) {
-		echo '3я декада';
-	} else {
-		echo 'ошибка, что-то другое';
-	} 
+$a = 60;
+$b = 20;
+	
+if ($a % $b === 0) {
+		echo 'четное';
+} else {
+		echo 'нечетное';
+}
 echo '<br>';
 
-
 //Задача №4
-$age = '10';
-
-if ($age>=10 and $age<=99) {
-	if (($age[0]+$age[1])<=9) {
-			echo 'сумма цифр однозначна';
-	  } else {
-		 	echo 'сумма цифр двузначна';
-		 }
-  } else {
-	 echo 'число меньше 10 или больше 99';
-  }
-
+$a = 61;
+$b = 3;
+$rest = $a % $b;
+	
+	if ($rest === 0) {
+		echo 'делится на 3';
+} else {
+		echo 'не делится на 3';
+}
 ?>
