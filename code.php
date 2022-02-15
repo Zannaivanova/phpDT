@@ -2,7 +2,7 @@
 //Задача №1
 $test = 0;
 
- if (isset($test)) {
+ if (empty($test)) {
 		echo '+';
 	} else {
 		echo '-';
@@ -10,19 +10,19 @@ $test = 0;
 echo '<br>';//+
 
 //Задача №2
-$test = null;
+$test = -1;
 
- if (!isset($test)) {
+ if (empty($test)) {
 		echo '+';
 	} else {
 		echo '-';
 	}
-echo '<br>';//+
+echo '<br>';//-
 
 //Задача №3
-$test = null;
+$test = '';
 
- if (isset($test)) {
+ if (!empty($test)) {
 		echo '+';
 	} else {
 		echo '-';
@@ -30,15 +30,87 @@ $test = null;
 echo '<br>';//-
 
 //Задача №4
- if (!isset($test)) {
+$test = -1;
+
+ if (empty($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//-
+
+//Задача №5
+$test = '0';
+
+ if (!empty($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//-
+
+//Задача №6
+$test = -1;
+
+ if (!empty($test)) {
 		echo '+';
 	} else {
 		echo '-';
 	}
 echo '<br>';//+
 
-//Задача №5
-$test = '';
+//Задача №7
+$test = null;
+
+ if (empty($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//+
+
+//Задача №8
+$test = false;
+
+ if (!empty($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//-
+
+//Задача №9
+$test = true;
+
+ if (!empty($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//+
+
+//Задача №10
+$test = 'false';
+
+ if (!empty($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//+
+
+//Задача №11
+$test = 'null';
+
+ if (!empty($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//+
+
+//Задача №12
+$test = 0;
 
  if (isset($test)) {
 		echo '+';
@@ -47,15 +119,17 @@ $test = '';
 	}
 echo '<br>';//+
 
-//Задача №6
- if (!isset($test)) {
+//Задача №13
+$test = null;
+
+ if (isset($test)) {
 		echo '+';
 	} else {
 		echo '-';
 	}
 echo '<br>';//-
 
-//Задача №7
+//Задача №14
 $test = false;
 
  if (isset($test)) {
@@ -64,12 +138,4 @@ $test = false;
 		echo '-';
 	}
 echo '<br>';//+
-
-//Задача №8
-//$arr = [1, 2, 3, 4, 5];
-
- //if (isset($arr[])) {
-//		echo '+';
-//	} else {
-//		echo '-'};//¯\_(ツ)_/¯
 ?>
