@@ -1,58 +1,54 @@
 <?php 
 //Задача №1
-$test = true;
+$test = 0;
 
- if ($test === true) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';
-
-//Задача №2
-$test = true;
-
- if ($test === false) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';
-
-//Задача №3
-$test = 1;
-
- if ($test == true) {
+ if (isset($test)) {
 		echo '+';
 	} else {
 		echo '-';
 	}
 echo '<br>';//+
 
-//Задача №4
-$test = 0;
+//Задача №2
+$test = null;
 
- if ($test == true) {
+ if (!isset($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//+
+
+//Задача №3
+$test = null;
+
+ if (isset($test)) {
 		echo '+';
 	} else {
 		echo '-';
 	}
 echo '<br>';//-
+
+//Задача №4
+ if (!isset($test)) {
+		echo '+';
+	} else {
+		echo '-';
+	}
+echo '<br>';//+
 
 //Задача №5
-$test = 1;
+$test = '';
 
- if ($test == false) {
+ if (isset($test)) {
 		echo '+';
 	} else {
 		echo '-';
 	}
-echo '<br>';//-
+echo '<br>';//+
 
 //Задача №6
-$test = 1;
-
- if ($test != true) {
+ if (!isset($test)) {
 		echo '+';
 	} else {
 		echo '-';
@@ -60,9 +56,9 @@ $test = 1;
 echo '<br>';//-
 
 //Задача №7
-$test = '';
+$test = false;
 
- if ($test == false) {
+ if (isset($test)) {
 		echo '+';
 	} else {
 		echo '-';
@@ -70,150 +66,10 @@ $test = '';
 echo '<br>';//+
 
 //Задача №8
-//test;
+//$arr = [1, 2, 3, 4, 5];
 
- //if (test == true) {
+ //if (isset($arr[])) {
 //		echo '+';
 //	} else {
-//		echo '-';}
-//echo '<br>';//¯\_(ツ)_/¯ warning/notice это ж не переменная, вроде
-
-//Задача №9
-$test = true;
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';
-
-//Задача №10
-$test = true;
-
- if (!$test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';
-
-//Задача №11
-$test = true;
-
- if (!$test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';
-
-//Задача №12
-$test = true;
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';
-
-//Задача №13
-$test = 3;
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';//+
-
-//Задача №14
-$test = 'abc';
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';//+
-
-//Задача №15
-$test = '';
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';//-
-
-//Задача №16
-//$test = 3 * 'abc';
-
-// if ($test) {
-//		echo '+';
-//	} else {
-//		echo '-';}
-//echo '<br>';//- (ой)
-
-//Задача №17
-$test = null;
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';//-
-
-//Задача №18
-$test = false;
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';//-
-
-//Задача №19
-$test;
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';//-
-
-//Задача №20
-$test = 0;
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';//-
-
-//Задача №21
-$test = '0';
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}
-echo '<br>';//-
-
-//Задача №22
-$test = -1;
-
- if ($test) {
-		echo '+';
-	} else {
-		echo '-';
-	}//- (ой)
-
+//		echo '-'};//¯\_(ツ)_/¯
 ?>
