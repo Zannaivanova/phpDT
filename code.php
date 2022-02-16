@@ -1,7 +1,10 @@
-<?php 
-//Задача №1
-	$num = -1;
-	$result = $num > 0 ? print ('положительное'): print ('отрицательное');
+<?php
+// Задача 1
+$user = ['name' => 'john', 'age' => 30];
 
-echo '<br>';
+$name = $user['name'] ?? 'unknown';
+
+
+// Задача 2
+$result = $user['name'] ?? $user['surname'] ?? 'empty';
 ?>
