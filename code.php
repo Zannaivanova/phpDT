@@ -1,23 +1,46 @@
 <?php
 // Задача 1
-$a = 2*(3 - 1);
-$b = 6 - 2;
+$i = 1;
 
-$result = $a == $b;
-var_dump($result);
-
+while($i<=100){
+	echo $i . "\n";
+	$i++;
+} 
+echo '<br>';
 
 // Задача 2
-$a = 5 * (7 - 4);
-$b = 1 + 2 + 7;
+$i = 11;
 
-$result = $a > $b;
-var_dump($result);
+while($i<=33){
+	echo $i . "\n";
+	$i++;
+} 
+echo '<br>';
 
 // Задача 3
-$a = 5 * (7 - 4);
-$b = 1 + 2 + 7;
+$i = 0;
 
-$result = $a != $b;
-var_dump($result);
+while($i<=100){
+	echo $i . "\n";
+	$i +=2;
+} 
+echo '<br>';
+
+// Задача 4
+$i = 1;
+
+while($i<=99){
+	echo $i . "\n";
+	$i +=2;
+} 
+echo '<br>';
+
+// Задача 5
+$i = 30;
+
+while($i>=0){
+	echo $i . "\n";
+	$i--;
+} 
+
 ?>
