@@ -1,47 +1,50 @@
 <?php 
 //Задача №1
-$min = 25;
+$month = 11;
 
-if ($min>=0 and $min<=19) {
-		echo '1 треть';
+if (($month>=1 and $month<=2)or $month==12) {
+		echo 'winter';
 	} 
-if ($min>=20 and $min<=39) {
-		echo '2 треть';
+if ($month>=3 and $month<=5) {
+		echo 'spring';
 	}  
-if ($min>=40 and $min<=59) {
-		echo '3 треть';
+if ($month>=6 and $month<=8) {
+		echo 'summer';
+	}
+if ($month>=9 and $month<=11) {
+		echo 'autumn';
 	}  
 echo '<br>';
 
 //Задача №2
-$arr = '256';
+$str = 'abcde';
 
-if (strlen($arr)==3) {
-		echo $arr[0]+$arr[1]+$arr[2];
-	} else {
-		echo 'в массиве НЕ 3 элемента';
-	}  
+if ($str[0]=='a'){
+	echo 'первым символом этой строки является буква "a"';
+}
 echo '<br>';
 
 //Задача №3
-$a = 60;
-$b = 20;
-	
-if ($a % $b === 0) {
-		echo 'четное';
-} else {
-		echo 'нечетное';
+$str = '12345';
+
+if ($str[0]==('1' or '2' or '3')){
+	echo 'первым символом этого числа является цифра 1, 2 или 3';
 }
 echo '<br>';
 
 //Задача №4
-$a = 61;
-$b = 3;
-$rest = $a % $b;
-	
-	if ($rest === 0) {
-		echo 'делится на 3';
-} else {
-		echo 'не делится на 3';
-}
+$str = '777';
+
+echo $str[0]+$str[1]+$str[2];
+
+echo '<br>';
+
+//Задача №5
+$str = '631541';
+
+if (($str[0]+ $str[1]+$str[2])==($str[3]+$str[4]+$str[5])) {
+		echo 'сумма первых трех цифр равняется сумме вторых трех цифр';
+	} else {
+		echo 'сумма первых трех цифр НЕ равняется сумме вторых трех цифр';
+	};
 ?>
