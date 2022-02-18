@@ -1,45 +1,33 @@
 <?php
 // Задача 1
-$i = 10;
-	
-while ($i >= 1) {
-		echo $i;
-		$i--;
+for ($i = 0; $i<=100; $i++) {
+		echo $i."\n";
 }
 echo '<br>';
 
 // Задача 2
-$i = 10;
-	
-	while ($i >= 1) {
-		echo $i;
-		$i--;
-	}
+for ($i = 11; $i<=33; $i++) {
+		echo $i."\n";
+}
 echo '<br>';
 
 // Задача 3
-$i = 10;
-	
-	while ($i > 0) {
-		echo $i;
-		$i--;
-	}
+for ($i = 0; $i<=100;) {
+		echo $i."\n";
+		$i +=2;
+}
 echo '<br>';
 
 // Задача 4
-	$i = 10;
-	
-	while ($i > 0) {
-		echo $i;
-		$i--;
-	}
+for ($i = 1; $i<=99;) {
+		echo $i."\n";
+		$i +=2;
+}
 echo '<br>';
 
 // Задача 5
-	$i = 10;
-	
-	while ($i > 0) {
-		echo $i;
-		$i--;
-	}
+for ($i = 100; $i>=0; $i--) {
+		echo $i."\n";
+}
+
 ?>
