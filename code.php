@@ -1,33 +1,29 @@
 <?php
 // Задача 1
-$result = 1;
-
-for ($i = 1; $i<=20; $i++) {
-
-		$result = $result * $i;
-}
-echo $result;
+$arr = ['a', 'b', 'c', 'd', 'e'];
+	
+	foreach ($arr as $elem) {
+		echo $elem . '<br>';
+	}
 
 echo '<br>';
 
 // Задача 2
-$result = 0;
-
-for ($i = 2; $i<=100; ) {
-        $i+=2;
-		$result = $result + $i;
-}
-echo $result;
-
+$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+$res = 0;
+	
+	foreach ($arr as $elem) {
+		$res+=$elem;
+	}
+echo $res;
 echo '<br>';
 
 // Задача 3
-$result = 0;
-
-for ($i = 1; $i<=99; ) {
-        $i+=2;
-		$result = $result + $i;
-}
-echo $result;
-
+$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+$res = 0;
+	
+	foreach ($arr as $elem) {
+		$res+=$elem;
+	}
+echo $res/9;
 ?>
