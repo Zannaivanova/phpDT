@@ -1,29 +1,19 @@
 <?php
 // Задача 1
-$arr = ['a', 'b', 'c', 'd', 'e'];
+$arr = ['green'=>'зеленый', 'red'=>'красный', 'blue'=>'голубой'];
 	
-	foreach ($arr as $elem) {
-		echo $elem . '<br>';
+	foreach ($arr as $key => $elem) {
+		echo $key . ' - ' . $elem . '<br>';
 	}
 
 echo '<br>';
 
 // Задача 2
-$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-$res = 0;
+$arr = ['user1'=>30, 'user2'=>32, 'user3'=>33];
 	
-	foreach ($arr as $elem) {
-		$res+=$elem;
+	foreach ($arr as $key => $elem) {
+		echo $key . ' - возраст ' . $elem . ' лет' . '<br>';
 	}
-echo $res;
-echo '<br>';
 
-// Задача 3
-$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-$res = 0;
-	
-	foreach ($arr as $elem) {
-		$res+=$elem;
-	}
-echo $res/9;
+echo '<br>';
 ?>
